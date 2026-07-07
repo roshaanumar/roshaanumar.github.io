@@ -1,0 +1,591 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roshaan Umar — AI Engineer &amp; Full Stack Developer</title>
+  <meta name="description" content="Portfolio of Roshaan Umar — Computer Science undergraduate specializing in database design, C++/OOP, and full stack development, with a growing focus on Python and AI.">
+  <meta name="keywords" content="Roshaan Umar, Software Developer, Full Stack Developer, AI Engineer, Database Design, C++, Python, Portfolio">
+  <meta name="author" content="Roshaan Umar">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Roshaan Umar — AI Engineer & Full Stack Developer">
+  <meta property="og:description" content="Computer Science undergraduate specializing in database design, C++/OOP, and full stack development.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/images/profile.jpg">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>👨‍💻</text></svg>">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ================= PRELOADER ================= -->
+  <div id="preloader" aria-hidden="true">
+    <div class="loader-mark">roshaan<span>.dev</span></div>
+    <div class="loader-bar"></div>
+  </div>
+
+  <!-- ================= SCROLL PROGRESS ================= -->
+  <div id="scroll-progress"></div>
+
+  <!-- ================= NAVBAR ================= -->
+  <header id="navbar">
+    <nav class="nav-inner container" aria-label="Primary">
+      <a href="#hero" class="logo">roshaan<span>.dev</span></a>
+
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#achievements">Achievements</a></li>
+        <li><a href="#contact" class="nav-cta">Contact</a></li>
+      </ul>
+
+      <button id="nav-toggle" class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ================= HERO ================= -->
+    <section class="hero" id="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-blob b1"></div>
+      <div class="hero-blob b2"></div>
+
+      <div class="container hero-grid">
+        <div>
+          <div class="hero-eyebrow">
+            <span class="dot"></span>
+            Available for internships &amp; entry-level roles
+          </div>
+
+          <h1>Hi, I'm <span class="gradient-text">Roshaan Umar</span></h1>
+
+          <div class="hero-role">
+            <span id="typed-role"></span><span class="cursor">&nbsp;</span>
+          </div>
+
+          <p class="lede">
+            Computer Science undergraduate (CGPA 3.71/4.00, Dean's Honour List) specializing in
+            database design and C++/OOP development — currently expanding into Python, full stack
+            web development, and AI, and eager to contribute to real-world software projects.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-primary">View Projects</a>
+            <a href="assets/resume/Roshaan_Umar_Resume.pdf" class="btn btn-outline" download>
+              Download Résumé
+            </a>
+          </div>
+
+          <div class="hero-socials">
+            <a class="social-icon" href="https://github.com/roshaanumar" target="_blank" rel="noopener" aria-label="GitHub profile">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.78 1.2 1.78 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.8 1.18 1.83 1.18 3.09 0 4.43-2.7 5.4-5.28 5.69.42.36.78 1.08.78 2.18 0 1.57-.02 2.84-.02 3.23 0 .3.2.66.79.55A10.51 10.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+            </a>
+            <a class="social-icon" href="https://linkedin.com/in/roshaan-umar" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+            </a>
+            <a class="social-icon" href="mailto:roshaanumar17@gmail.com" aria-label="Send an email">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7L22 6"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-photo-wrap">
+          <div class="hero-photo-ring"></div>
+          <div class="hero-photo">
+            <img src="assets/images/profile.jpg" alt="Portrait of Roshaan Umar" width="340" height="340">
+            <div class="hero-photo-badge glass">
+              <span>Status</span>
+              <span>● Open to work</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="scroll-cue" aria-hidden="true">
+        <span>Scroll</span>
+        <span class="line"></span>
+      </div>
+    </section>
+
+    <!-- ================= ABOUT ================= -->
+    <section class="section" id="about">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-tag">01 · About</div>
+          <h2>Get to know me</h2>
+        </div>
+
+        <div class="about-grid">
+          <div class="reveal">
+            <p>
+              I'm a Bachelor of Science in Computer Science student with a CGPA of 3.71,
+              passionate about technology and always learning — particularly in
+              web development, Python, and artificial intelligence.
+            </p>
+            <p>
+              I'm eager to apply my knowledge to real-world projects, continuously improve my
+              technical abilities, and contribute to innovative solutions while growing as a
+              <strong>software developer</strong>. My foundation is in database design and
+              C++/OOP, and I bring that same structured thinking to every new stack I pick up.
+            </p>
+            <p>
+              Currently expanding my skills in <strong>Python, frontend development, backend
+              development, UI/UX design, and data science</strong>, while strengthening my core
+              foundation in software engineering.
+            </p>
+
+            <div class="about-focus">
+              <span class="focus-pill glass">Python</span>
+              <span class="focus-pill glass">Frontend Development</span>
+              <span class="focus-pill glass">Backend Development</span>
+              <span class="focus-pill glass">UI/UX Design</span>
+              <span class="focus-pill glass">Data Science</span>
+            </div>
+          </div>
+
+          <div class="about-stats reveal reveal-delay-1">
+            <div class="stat-card glass">
+              <div class="num">3.71</div>
+              <div class="label">CGPA out of 4.00 — Dean's Honour List (2023–Present)</div>
+            </div>
+            <div class="stat-card glass">
+              <div class="num">4.00</div>
+              <div class="label">SGPA achieved in Semester 6</div>
+            </div>
+            <div class="stat-card glass">
+              <div class="num">1</div>
+              <div class="label">Completed IT internship — Oracle database design at Al-Quresh Fabrics</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EDUCATION ================= -->
+    <section class="section section-alt" id="education">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-tag">02 · Education</div>
+          <h2>Academic background</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item reveal">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass">
+              <span class="when">Expected February 2027</span>
+              <h3>Bachelor of Science, Computer Science</h3>
+              <div class="where">The University of Lahore</div>
+              <ul>
+                <li>CGPA: 3.71/4.00</li>
+                <li>Semester 6 SGPA: 4.00/4.00</li>
+                <li>Dean's Honour List (2023)</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item reveal reveal-delay-1">
+            <div class="timeline-dot"></div>
+            <div class="timeline-card glass">
+              <span class="when">September 2023</span>
+              <h3>High School Diploma</h3>
+              <div class="where">The Punjab Group of Colleges, Lahore</div>
+              <ul>
+                <li>Grade: A (2021–2023)</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= SKILLS ================= -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-tag">03 · Skills</div>
+          <h2>What I work with</h2>
+          <p>Core strengths in database design and C++/OOP, with active growth in Python and web/AI development.</p>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-category glass reveal">
+            <h3>Programming &amp; OOP</h3>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span>C++</span><span class="lvl">Core</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-level="82"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span>Object-Oriented Programming</span><span class="lvl">Core</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-level="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span>Python</span><span class="lvl">In progress</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-level="45"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span>Data Structures (fundamentals)</span><span class="lvl">Core</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-level="68"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span>Debugging</span><span class="lvl">Practiced</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-level="75"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-category glass reveal reveal-delay-1">
+            <h3>Databases</h3>
+
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span>MySQL</span><span class="lvl">Core</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-level="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span>Oracle Database</span><span class="lvl">Core</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-level="78"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span>SQL Querying</span><span class="lvl">Core</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-level="85"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span>ERD Modeling</span><span class="lvl">Core</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-level="80"></div></div>
+            </div>
+            <div class="skill-bar-item">
+              <div class="skill-bar-top"><span>Database Normalization (3NF)</span><span class="lvl">Core</span></div>
+              <div class="skill-bar-track"><div class="skill-bar-fill" data-level="82"></div></div>
+            </div>
+          </div>
+
+          <div class="skill-category glass reveal">
+            <h3>Tools &amp; Platforms</h3>
+            <div class="skill-chips">
+              <span class="skill-chip">Dev-C++</span>
+              <span class="skill-chip">XAMPP</span>
+              <span class="skill-chip">Cisco Packet Tracer</span>
+              <span class="skill-chip">VMware Workstation</span>
+              <span class="skill-chip">MS Office</span>
+              <span class="skill-chip">GitHub</span>
+              <span class="skill-chip">Git</span>
+            </div>
+          </div>
+
+          <div class="skill-category glass reveal reveal-delay-1">
+            <h3>Core Competencies</h3>
+            <div class="skill-chips">
+              <span class="skill-chip">Problem Solving</span>
+              <span class="skill-chip">Time Management</span>
+              <span class="skill-chip">Cross-functional Collaboration</span>
+              <span class="skill-chip">Technical Communication</span>
+              <span class="skill-chip">Fast Learner</span>
+            </div>
+          </div>
+
+          <div class="skill-category glass reveal full">
+            <h3>Web &amp; AI Exposure — via project work</h3>
+            <div class="skill-chips">
+              <span class="skill-chip">HTML</span>
+              <span class="skill-chip">CSS</span>
+              <span class="skill-chip">JavaScript</span>
+              <span class="skill-chip">FastAPI</span>
+              <span class="skill-chip">OpenCV</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= EXPERIENCE ================= -->
+    <section class="section section-alt" id="experience">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-tag">04 · Experience</div>
+          <h2>Where I've worked</h2>
+        </div>
+
+        <div class="exp-card glass reveal">
+          <div class="exp-head">
+            <div>
+              <h3>Intern — IT Department</h3>
+              <div class="role-org">Al-Quresh Fabrics (PVT) Ltd. · Faisalabad, Punjab, Pakistan</div>
+            </div>
+            <span class="exp-when">Aug 2025 – Sep 2025</span>
+          </div>
+          <ul>
+            <li>Assisted the IT department in designing an Oracle database schema to replace manual fabric-inventory tracking — mapping entities/relationships, building test tables, and entering validation data to deliver a working schema draft that let staff retrieve stock records digitally and directly supported the department's database-migration plan.</li>
+            <li>Gathered and digitized inventory data into the new system, and prepared and delivered 2 project-status presentations to senior staff, improving cross-team visibility into project goals.</li>
+            <li>Coordinated with 4–5 team members daily to keep workflow and workspace organization on schedule.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= PROJECTS ================= -->
+    <section class="section" id="projects">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-tag">05 · Projects</div>
+          <h2>Academic &amp; independent projects</h2>
+          <p>Hands-on builds spanning C++ desktop applications, relational database design, and an AI-assisted web module.</p>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card glass reveal">
+            <div class="project-icon">C++</div>
+            <h3>Campus Cafeteria Order Management System</h3>
+            <p>
+              An OOP-based order-management desktop application built in C++ (Dev-C++) as a university
+              project — replacing the campus cafeteria's slow, manual order-taking process with
+              structured order capture, item pricing, and automated bill calculation. Produced a
+              functional prototype that reduced calculation errors.
+            </p>
+            <div class="project-tags">
+              <span>C++</span><span>OOP</span><span>Dev-C++</span><span>File Handling</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/roshaanumar/campus-cafeteria-order-system" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.78 1.2 1.78 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.8 1.18 1.83 1.18 3.09 0 4.43-2.7 5.4-5.28 5.69.42.36.78 1.08.78 2.18 0 1.57-.02 2.84-.02 3.23 0 .3.2.66.79.55A10.51 10.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+                Code
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal reveal-delay-1">
+            <div class="project-icon">DB</div>
+            <h3>University Management System Database</h3>
+            <p>
+              A relational database built in MySQL via XAMPP to centralize student, course, and
+              faculty records previously scattered across spreadsheets — modeled with an ERD and
+              normalized every table to 3NF to eliminate redundancy, delivering a fully query-able
+              prototype.
+            </p>
+            <div class="project-tags">
+              <span>MySQL</span><span>XAMPP</span><span>SQL</span><span>ERD</span><span>3NF</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/roshaanumar/university-management-system-database" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.78 1.2 1.78 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.8 1.18 1.83 1.18 3.09 0 4.43-2.7 5.4-5.28 5.69.42.36.78 1.08.78 2.18 0 1.57-.02 2.84-.02 3.23 0 .3.2.66.79.55A10.51 10.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+                Code
+              </a>
+            </div>
+          </article>
+
+          <article class="project-card glass reveal reveal-delay-2">
+            <div class="project-icon">AI</div>
+            <h3>Emotion Mirror — Autism Early-Detection Prototype</h3>
+            <p>
+              An AI-powered, web-based emotion-recognition module designed and implemented within a
+              cross-functional team for a Software Project Management course, supporting a Final
+              Year Project's accessible autism-screening feature — now integrated into the ongoing FYP.
+            </p>
+            <div class="project-tags">
+              <span>HTML/CSS/JS</span><span>Python</span><span>FastAPI</span><span>OpenCV</span>
+            </div>
+            <div class="project-actions">
+              <a href="https://github.com/roshaanumar/autisense-emotion-mirror" target="_blank" rel="noopener" class="btn btn-outline btn-sm">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.78 1.2 1.78 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.8 1.18 1.83 1.18 3.09 0 4.43-2.7 5.4-5.28 5.69.42.36.78 1.08.78 2.18 0 1.57-.02 2.84-.02 3.23 0 .3.2.66.79.55A10.51 10.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+                Code
+              </a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CERTIFICATIONS ================= -->
+    <section class="section section-alt" id="certifications">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-tag">06 · Certifications</div>
+          <h2>Certifications</h2>
+        </div>
+
+        <div class="cert-card glass solo reveal">
+          <div class="cert-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="8" r="6"/><path d="M8.5 13.5 7 22l5-3 5 3-1.5-8.5"/></svg>
+          </div>
+          <div>
+            <h3>Internship Completion Certificate</h3>
+            <div class="issuer">Al-Quresh Fabrics (PVT) Ltd.</div>
+            <div class="date">September 2025</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= ACHIEVEMENTS ================= -->
+    <section class="section" id="achievements">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-tag">07 · Achievements</div>
+          <h2>Milestones so far</h2>
+        </div>
+
+        <div class="achieve-grid">
+          <div class="achieve-card glass reveal">
+            <div class="achieve-badge">★</div>
+            <p>Dean's Honour List (2023–Present)</p>
+          </div>
+          <div class="achieve-card glass reveal reveal-delay-1">
+            <div class="achieve-badge">%</div>
+            <p>CGPA of 3.71/4.00 throughout the degree</p>
+          </div>
+          <div class="achieve-card glass reveal reveal-delay-2">
+            <div class="achieve-badge">4.0</div>
+            <p>Achieved a perfect 4.00/4.00 SGPA in Semester 6</p>
+          </div>
+          <div class="achieve-card glass reveal">
+            <div class="achieve-badge">IT</div>
+            <p>Completed an IT internship at Al-Quresh Fabrics (PVT) Ltd., contributing to the design of an Oracle-based inventory database system</p>
+          </div>
+          <div class="achieve-card glass reveal reveal-delay-1">
+            <div class="achieve-badge">&lt;/&gt;</div>
+            <p>Developed academic projects spanning C++, database design, SQL, and AI-assisted web development</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= RESUME ================= -->
+    <section class="section section-alt" id="resume">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-tag">08 · Résumé</div>
+          <h2>Take a copy with you</h2>
+        </div>
+
+        <div class="resume-card glass reveal">
+          <div class="resume-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3v12m0 0-4-4m4 4 4-4"/><path d="M4 17v2a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-2"/></svg>
+          </div>
+          <h3>Roshaan Umar — Résumé</h3>
+          <p>A full breakdown of my education, skills, experience, and projects — in one PDF.</p>
+          <a href="assets/resume/Roshaan_Umar_Resume.pdf" class="btn btn-primary" download>
+            Download Résumé (PDF)
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ================= CONTACT ================= -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-head reveal">
+          <div class="section-tag">09 · Contact</div>
+          <h2>Let's work together</h2>
+          <p>Open to Software Engineering, Database Development, and Full Stack internship opportunities. Reach out any time.</p>
+        </div>
+
+        <div class="contact-grid">
+          <div class="contact-info reveal">
+            <p>
+              Whether you have an internship opportunity, a project idea, or just want to say hi —
+              my inbox is open.
+            </p>
+
+            <ul class="contact-list">
+              <li>
+                <span class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m2 6 10 7L22 6"/></svg></span>
+                <div>
+                  <span class="label">Email</span>
+                  <a href="mailto:roshaanumar17@gmail.com">roshaanumar17@gmail.com</a>
+                </div>
+              </li>
+              <li>
+                <span class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.362 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0 1 22 16.92Z"/></svg></span>
+                <div>
+                  <span class="label">Phone</span>
+                  <a href="tel:03104462412">0310-4462412</a>
+                </div>
+              </li>
+              <li>
+                <span class="icon"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg></span>
+                <div>
+                  <span class="label">Location</span>
+                  <span>Lahore, Punjab, Pakistan</span>
+                </div>
+              </li>
+            </ul>
+
+            <div class="hero-socials">
+              <a class="social-icon" href="https://github.com/roshaanumar" target="_blank" rel="noopener" aria-label="GitHub profile">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.78 1.2 1.78 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.8 1.18 1.83 1.18 3.09 0 4.43-2.7 5.4-5.28 5.69.42.36.78 1.08.78 2.18 0 1.57-.02 2.84-.02 3.23 0 .3.2.66.79.55A10.51 10.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+              </a>
+              <a class="social-icon" href="https://linkedin.com/in/roshaan-umar" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+              </a>
+            </div>
+          </div>
+
+          <form id="contact-form" class="contact-form-card glass reveal reveal-delay-1" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="cf-name">Name</label>
+                <input type="text" id="cf-name" name="name" placeholder="Your full name" autocomplete="name" required aria-required="true">
+                <span class="error-msg" role="alert"></span>
+              </div>
+              <div class="field">
+                <label for="cf-email">Email</label>
+                <input type="email" id="cf-email" name="email" placeholder="you@example.com" autocomplete="email" required aria-required="true">
+                <span class="error-msg" role="alert"></span>
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="cf-subject">Subject</label>
+              <input type="text" id="cf-subject" name="subject" placeholder="What's this about?" required aria-required="true">
+              <span class="error-msg" role="alert"></span>
+            </div>
+
+            <div class="field">
+              <label for="cf-message">Message</label>
+              <textarea id="cf-message" name="message" placeholder="Tell me a bit about the opportunity or project..." required aria-required="true"></textarea>
+              <span class="error-msg" role="alert"></span>
+            </div>
+
+            <button type="submit" class="btn btn-primary">Send Message</button>
+            <div id="form-status" class="form-status" role="status"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="container">
+    <p>© <span id="year"></span> Roshaan Umar. Built with HTML, CSS &amp; JavaScript.</p>
+    <div class="footer-socials">
+      <a class="social-icon" href="https://github.com/roshaanumar" target="_blank" rel="noopener" aria-label="GitHub profile">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 .5C5.65.5.5 5.65.5 12c0 5.09 3.29 9.4 7.86 10.93.57.1.78-.25.78-.55 0-.27-.01-1.16-.02-2.11-3.2.7-3.87-1.36-3.87-1.36-.53-1.34-1.29-1.7-1.29-1.7-1.05-.72.08-.71.08-.71 1.16.08 1.78 1.2 1.78 1.2 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.56-.29-5.26-1.28-5.26-5.7 0-1.26.45-2.29 1.19-3.09-.12-.29-.52-1.47.11-3.06 0 0 .97-.31 3.18 1.18a11.1 11.1 0 0 1 5.79 0c2.2-1.49 3.17-1.18 3.17-1.18.64 1.59.24 2.77.12 3.06.74.8 1.18 1.83 1.18 3.09 0 4.43-2.7 5.4-5.28 5.69.42.36.78 1.08.78 2.18 0 1.57-.02 2.84-.02 3.23 0 .3.2.66.79.55A10.51 10.51 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+      </a>
+      <a class="social-icon" href="https://linkedin.com/in/roshaan-umar" target="_blank" rel="noopener" aria-label="LinkedIn profile">
+        <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.75v20.5C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.75V1.75C24 .78 23.2 0 22.22 0Z"/></svg>
+      </a>
+    </div>
+  </footer>
+
+  <!-- ================= SCROLL TO TOP ================= -->
+  <button id="scroll-top" aria-label="Scroll back to top">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 19V5m0 0-6 6m6-6 6 6"/></svg>
+  </button>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
